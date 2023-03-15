@@ -19,6 +19,6 @@ for i in mtrx_trnsp(x):
         print(j, end=' ')
     print()
 
-print('dimension of original matrix is', len(x), 'x', len(x[0]))
-print('dimension of trasnpositioned matrix is', len(mtrx_trnsp(x)), 'x', len(mtrx_trnsp(x)[0]))
+print('Размерность изначальной матрицы', len(x), 'x', len(x[0]))
+print('Размерность конечной матрицы', len(mtrx_trnsp(x)), 'x', len(mtrx_trnsp(x)[0]))
 

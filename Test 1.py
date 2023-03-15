@@ -1,14 +1,17 @@
-a = list(map(int, input().split()))
-s = set(a)
-b = []
+a = list(map(int, input("введите элементы списка через пробел \n").split()))
 
-for i in a:
-    if i in s:
-        b.append(i)
-        s.remove(i)
-    else:
-        if i in b:
-            b.remove(i)
-b.sort()
+
+def unique_val(a):
+    u = []
+
+    for i in a:
+        if i in u:
+            pass
+        else:
+            u.append(i)
+    return sorted(u)
+
+
+b = unique_val(a)
 for i in b:
     print(i, end=' ')

@@ -5,10 +5,10 @@ def cos_sim(a, b):
         sq_modulus_b = (sum(i**2 for i in b))
         return dot / (sq_modulus_a * sq_modulus_b)**0.5
     else:
-        return 'Cannot define cosinus simularity: vectors have diffirent dimensions'
+        return 'Невозможно определить косинусное расстояние так как вектора имеют разную размерность'
 
 
-v1 = list(map(int, input().split()))
-v2 = list(map(int, input().split()))
+v1 = list(map(int, input('Введите координаты 1-ого вектора через пробел\n').split()))
+v2 = list(map(int, input('Введите координаты 2-ого вектора через пробел\n').split()))
 
-print(cos_sim(v1, v2))
+print('Косинусное расстояние между векторами = ', cos_sim(v1, v2))

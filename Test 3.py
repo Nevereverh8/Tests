@@ -1,5 +1,13 @@
 import datetime
-a = list(map(int, input().split(sep='.')))
-b = list(map(int, input().split(sep='.')))
-x = abs(datetime.date(a[2], a[1], a[0])-datetime.date(b[2], b[1], b[0]))
-print(x.days)
+
+
+def days_distance(d1,d2):
+    x = abs(datetime.date(d1[2], d1[1], d1[0])-datetime.date(d2[2], d2[1], d2[0]))
+    return x.days
+
+
+a = list(map(int, input("Введите первую дату через точку в формате ДД.ММ.ГГ\n").split(sep='.')))
+b = list(map(int, input("Введите вторую дату через точку в формате ДД.ММ.ГГ\n").split(sep='.')))
+
+
+print('Разница между двумя датами в днях =', days_distance(a, b))
